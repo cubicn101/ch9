@@ -3,25 +3,25 @@ public class Stats{
 	
     public static void main (String []args){
      System.out.println("Count:" + args.length);
-     System.out.println("Sum:" + sum(args[]));
-     System.out.println("Min:" + sum(args[]));
-     System.out.println("Max:" + sum(args[]));
-     System.out.println("Average:" + sum(args[]));
+     System.out.println("Sum:" + sum(agrs));
+     System.out.println("Min:" + min(args));
+     System.out.println("Max:"+ max(args) );
+     System.out.println("Average:"+ average(args) );
     }
     public static int sum(String []args){
 		int SUM = 0;
-		int num=  Integer.parseInt(args[i]);
 		for(int i=0; i<agrs.length; i++){
+		    int num=  Integer.parseInt(args[i]);
 			SUM += num;
 		} 
 		return SUM;   
     }
     public static int min(String []args){
-		int min = args[0];
-		for(int i=1; i<agrs.length; i++){
-			
-			if(args[i]<min)
-			min = args[i];
+		int min;
+		for(int i=0; i<agrs.length; i++){
+			int num=  Integer.parseInt(args[i]);
+			if(num<min)
+			min = num;
 		}
 		return min;
 	}
@@ -37,8 +37,8 @@ public class Stats{
     }
     
     public static double ave (String []args){
-		double average = (double) sum(args[])/ args.length;
-		//??? 
+		double average = (double) sum(args)/ args.length;
+	    return average;
 	}
 }
 
