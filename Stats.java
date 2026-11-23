@@ -1,21 +1,23 @@
-import Scanner.till
 
 public class Stats{
 	
     public static void main (String []args){
      System.out.println("Count:" + args.length);
-     System.out.println("Sum:" + ??? );
+     System.out.println("Sum:" + sum(args[]));
+     System.out.println("Min:" + sum(args[]));
+     System.out.println("Max:" + sum(args[]));
+     System.out.println("Average:" + sum(args[]));
     }
     public static int sum(String []args){
 		int SUM = 0;
+		int num=  Integer.parseInt(args[i]);
 		for(int i=0; i<agrs.length; i++){
-			SUM += args[i];
+			SUM += num;
 		} 
 		return SUM;   
     }
-    public static int min(){
+    public static int min(String []args){
 		int min = args[0];
-		//???
 		for(int i=1; i<agrs.length; i++){
 			
 			if(args[i]<min)
@@ -31,11 +33,11 @@ public class Stats{
             max = value;
             }
          }
-    System.out.println("The max is " + max);
+           return max;
     }
     
     public static double ave (String []args){
-		double average = (double) sum/ args.length;
+		double average = (double) sum(args[])/ args.length;
 		//??? 
 	}
 }
